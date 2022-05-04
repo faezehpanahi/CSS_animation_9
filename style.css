@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ text-align: center;
+ margin: 2rem auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  background-color: bisque;
+}
+
+h1{
+  color: crimson;
+  margin: 1rem auto;
+}
+
+hr{
+  width: 50rem;
+  margin: 2rem auto;
+}
+
+/* .container{
+  width: 287px;
+  height: 100px;
+  background-color: rgba(80, 60, 226, 0.525);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+} */
+
+/* a{
+  width: 287px;
+  height: 100px;
+  padding: 27px 50px;
+  text-decoration: none;
+  color: rgb(202, 204, 93);
+  font-size: 2rem;
+  border: 5px solid rgb(119, 182, 172);
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+} */
+
+/* a::before{
+  content: "Hover Me!";
+  color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(5);
+  transition: all 2s;
+  opacity: 0;
+}
+
+a:hover::before{
+  transform: scale(1) ;
+  opacity: 1; 
+} */
+
+ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ul li a{
+  display: block;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  color: deeppink;
+  font-size: large;
+  position: relative;
+  transition: all 0.5s;
+}
+
+a:hover{
+  color: rgb(81, 194, 141);
+}
+
+ul li span{
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  /* width: 25%;
+  height: 100%; */
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 1s;
+}
+
+a:hover span{
+  transform: scaleY(1);
+}
+
+span:nth-child(2){
+  /* left: 25%; */
+  top: 25%;
+  transition-delay: 0.15s;
+}
+
+span:nth-child(3){
+  /* left: 50%; */
+  top: 50%;
+  transition-delay: 0.3s;
+}
+span:nth-child(4){
+  /* left: 75%; */
+  top: 75%;
+  transition-delay: 0.45s;
+}
